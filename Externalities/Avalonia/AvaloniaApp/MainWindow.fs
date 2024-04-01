@@ -13,4 +13,7 @@ type MainWindow () as this =
 #if DEBUG
         this.AttachDevTools()
 #endif
-        AvaloniaXamlLoader.Load(this)
+        this.Title <- "AvaloniaApp"
+        this.Width <- 800.0
+        this.Height <- 450.0
+        this.Content <- "Hello World!"
